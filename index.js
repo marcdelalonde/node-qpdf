@@ -85,7 +85,7 @@ Qpdf.encrypt = function(input, options, callback) {
 
 Qpdf.decrypt = function(input, password, callback) {
   if (!input) return handleError(new Error('Specify input file'), callback);
-  if (!password) return handleError(new Error('Password missing'), callback);
+  // if (!password) return handleError(new Error('Password missing'), callback);
 
   var args = [Qpdf.command, '--decrypt'];
 
